@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/is_new_info"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_inform_blue"/>
+            <ImageView
+                android:id="@+id/red_dot"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_gravity="top|right"
+                android:src="@drawable/icon_rednode"
+                android:visibility="gone"
+                />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="4"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="安全注意事项"
+                    android:textColor="#333"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/create_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="10分钟前"
+                    android:textColor="#999"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:layout_gravity="left">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="12sp"
+                    android:textColor="#999"
+                    android:text="来自："/>
+                <TextView
+                    android:id="@+id/founder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="12sp"
+                    android:textColor="#999"
+                    android:text="管理员张某某"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/create_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="#999"
+                    android:maxLength="20"
+                    android:text="一：出行前准备 1：查询出行 期间的天气情况；2：查询当地的风俗习惯；3：规划好游行路线："  />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_popup_bg"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/allSite"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_task_screen_allState"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="8"
+                android:text="@string/all"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/img_task_screen_allState"
+                android:layout_width="0dp"
+                android:layout_height="9dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_weight="1"
+                android:src="@drawable/ic_classify"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_i_create"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/tv_task_screen_IC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="8"
+                android:text="@string/i_create"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/img_task_screen_IC"
+                android:layout_width="0dp"
+                android:layout_height="9dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_weight="1"
+                android:src="@drawable/ic_classify"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ly_not_get"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/tv_task_screen_un_get"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="8"
+                android:text="@string/not_get"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/img_task_screen_un_get"
+                android:layout_width="0dp"
+                android:layout_height="9dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_weight="1"
+                android:src="@drawable/ic_classify"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_get"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/tv_task_screen_get"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="8"
+                android:text="@string/get"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/img_task_screen_get"
+                android:layout_width="0dp"
+                android:layout_height="9dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_weight="1"
+                android:src="@drawable/ic_classify"
+                android:visibility="invisible"/>
+        </LinearLayout>
+</LinearLayout>

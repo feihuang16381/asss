@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_task_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground"
+    android:orientation="vertical"
+    tools:context="com.cqut.icode.asss_android.activity.TaskDetailActivity">
+
+    <include layout="@layout/the_theme_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="350dp"
+                android:layout_height="450dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:background="@color/letter">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:id="@+id/task_info_ly"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:divider="@drawable/horizontal_imaginary_line"
+                            android:orientation="vertical"
+                            android:showDividers="middle">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="65dp"
+                                android:gravity="center"
+                                android:text="@string/dg_stand"
+                                android:id="@+id/task_type"
+                                android:textColor="@color/content_text"
+                                android:textSize="15sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical|right"
+                                    android:text="@string/task_name"
+                                    android:textColor="@color/label_text"
+                                    android:textSize="14sp"
+                                   />
+
+                                <TextView
+                                    android:id="@+id/task_name"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="3"
+                                    android:gravity="center_vertical|left"
+                                    android:text="@string/test_task_name"
+                                    android:textColor="@color/content_text" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical|right"
+                                    android:text="@string/task_terminal"
+                                    android:textColor="@color/label_text"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/task_terminal"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="3"
+                                    android:gravity="center_vertical|left"
+                                    android:text="@string/test_path"
+                                    android:textColor="@color/content_text" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical|right"
+                                    android:text="@string/people"
+                                    android:textColor="@color/label_text"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/peoples"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="3"
+                                    android:gravity="center_vertical|left"
+                                    android:text="@string/test_people"
+                                    android:textColor="@color/content_text" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical|right"
+                                    android:text="@string/time"
+                                    android:textColor="@color/label_text"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/time"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="3"
+                                    android:gravity="center_vertical|left"
+                                    android:text="@string/test_time"
+                                    android:textColor="@color/content_text" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical|right"
+                                        android:text="@string/task_remark"
+                                        android:textColor="@color/label_text"
+                                        android:textSize="14sp" />
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="3" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/task_remark"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="600dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:gravity="top|left"
+                                    android:lineSpacingExtra="8dp"
+                                    android:lineSpacingMultiplier="1.5"
+                                    android:text="@string/test_remark"
+                                    android:textColor="@color/content_text" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </ScrollView>
+
+                    <ImageView
+                        android:id="@+id/img_task_get_status"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="top|right"
+                        android:src="@drawable/task_letter_label" />
+                </FrameLayout>
+
+                <ImageView
+
+                    android:layout_width="350dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/ic_letter_pkg" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/get_it"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/send_button_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="华文细黑"
+                    android:gravity="center"
+                    android:text="@string/get_it"
+                    android:textColor="@color/theme_primary"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

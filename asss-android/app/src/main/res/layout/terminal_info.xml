@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/back_color">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="#fff" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/sta_font"
+            android:textSize="18sp"
+            android:text="站点详情"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp">
+
+        <include
+            android:id="@+id/terminal_dec"
+            layout="@layout/terminal_description" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="12dp"
+        android:background="#e5e5e5"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/info_change"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/icon_bianji"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:textSize="18sp"
+                android:gravity="center|left"
+                android:layout_marginLeft="10dp"
+
+                android:textColor="@color/stationInfo"
+                android:text="信息修改"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_next"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/danger_report"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/icon_report" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="8"
+                android:text="危险源报告"
+                android:textColor="@color/stationInfo"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/icon_next" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/other"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/icon_weixiu"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:textSize="18sp"
+                android:gravity="center|left"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/stationInfo"
+                android:text="通用维护"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_next"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.6"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:background="#fff">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/point_up"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="10dp">
+            <com.baidu.mapapi.map.MapView
+                android:id="@+id/bmapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true">
+            </com.baidu.mapapi.map.MapView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

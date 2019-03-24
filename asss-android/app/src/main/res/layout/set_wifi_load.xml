@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/back_color">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="#fff" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/sta_font"
+            android:textSize="18sp"
+            android:text="设置"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="41"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/icon_upload"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="278"
+            android:layout_height="wrap_content"
+            android:text="wifi情况下上传"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:textColor="@color/stationInfo"
+            android:textSize="16sp" />
+
+        <Switch
+            android:id="@+id/wifiload"
+            android:layout_width="0dp"
+            android:layout_weight="56"
+            android:layout_gravity="center"
+            android:layout_marginRight="14dp"
+            android:layout_height="21dp" />
+    </LinearLayout>
+
+</LinearLayout>

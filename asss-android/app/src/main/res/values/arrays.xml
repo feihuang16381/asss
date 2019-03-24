@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="query_suggestions">
+        <item>Android</item>
+        <item>iOS</item>
+        <item>SCALA</item>
+        <item>Ruby</item>
+        <item>JavaScript</item>
+    </string-array>
+    <string-array name="terminal_classify">
+        <item>全部</item>
+        <item>危险源</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="terminal_screen">
+        <item>全部</item>
+        <item>附近</item>
+    </string-array>
+
+    <string-array name="notice_search">
+        <item>我</item>
+        <item>管理员</item>
+        <item>注意事项</item>
+    </string-array>
+    <string-array name="task_type">
+        <item>危险源巡检</item>
+        <item>危险源标定</item>
+        <item>危险源维护</item>
+        <item>通用维护</item>
+    </string-array>
+</resources>

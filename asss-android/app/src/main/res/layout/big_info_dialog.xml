@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/cancel"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/blue"
+        />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/remark"
+        android:textSize="20sp"
+        android:textColor="@color/theme_secondary_text_inverted"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        />
+    <TextView
+        android:id="@+id/tv_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/finish"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:textColor="@color/blue"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"/>
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line"/>
+</RelativeLayout>
+    <EditText
+        android:id="@+id/tv_info"
+        android:gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/et_focus"/>
+</LinearLayout>

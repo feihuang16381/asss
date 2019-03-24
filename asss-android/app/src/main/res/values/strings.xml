@@ -1,0 +1,113 @@
+<resources>
+    <!--test-->
+    <string name="test_path">重庆理工大学</string>
+    <string name="test_terminal">11503&#12288;重庆理工大学</string>
+    <string name="test_admin_name">管理员张明明</string>
+    <string name="app_name">多邦运维</string>
+    <string name="loading">正在获取数据, 请稍后&#8230;</string>
+    <string name="affirm">确认</string>
+    <string name="test_time">2017-12-12</string>
+    <string name="test_task_name">利剑行动</string>
+    <string name="test_people">张三、李四、王五</string>
+    <string name="test_remark">危险源泄漏，注意安全危险源泄漏，注意安全危险源泄漏，注意安全危险源泄漏，注意安全危险源泄漏，注意安全危险源泄漏，注意安全危险源泄漏，注意安全
+    危险源泄漏，注意安全危险源泄漏，注意安全危险源泄漏，注意安全危险源泄漏，注意安全危险源泄漏，注意安全危险源泄漏，注意安全</string>
+    <!--dialog-->
+    <string name="cancel">取消</string>
+    <string name="all_select">全选</string>
+    <string name="finish">完成</string>
+    <string name="remark">备注信息:</string>
+
+    <string name="scan_QR_code">扫描二维码</string>
+    <!--login-->
+    <string name="registration_user_hint">请输入您的用户名</string>
+    <string name="pwd_null">请输入登录密码</string>
+    <string name="login">立即登录</string>
+    <!--main-->
+    <string name="all">全部</string>
+    <string name="nearby">附近</string>
+    <string name="other">其他</string>
+    <string name="danger">危险源</string>
+    <string name="title_activity_main">首页</string>
+    <string name="classify">分类</string>
+    <string name="screen">筛选站点</string>
+    <string name="state">状态</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!--common-->
+    <string name="terminal">站点</string>
+    <string name="maintain_per">维修前</string>
+    <string name="maintain_ing">维修时</string>
+    <string name="maintain_ed">维修后</string>
+
+    <!---maintain-->
+    <string name="people">人&#12288;&#12288;员:</string>
+    <string name="fault_description">故障描述:</string>
+    <string name="change_parts">更换配件:</string>
+    <string name="is_recover">是否恢复:</string>
+    <string name="finish_time">完成时间:</string>
+    <string name="remark_info">备注信息:</string>
+    <string name="upload_img">上传图片:</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+
+    <!---slideBar-->
+    <string name="tra_account">切换账号</string>
+    <string name="cg_pwd">修改密码</string>
+    <string name="upload_status">上传情况</string>
+    <string name="set">设置</string>
+    <string name="exit">退出登录</string>
+
+    <!--Inspectreport-->
+    <string name="facility_running">设备运行:</string>
+    <string name="normal_running">正常</string>
+    <string name="basic_normal_running">基本正常</string>
+    <string name="abnormal_running">异常</string>
+    <string name="hand_ppm">手持浓度:</string>
+    <string name="facility_ppm">设备浓度:</string>
+    <string name="finished_time">完成时间:</string>
+    <string name="finished_date">完成日期:</string>
+    <string name="inspect_remark">备注信息:</string>
+
+
+    <!--danger_maintain-->
+    <string name="danger_maintain_remark">备注信息:</string>
+    <string name="replace_facility">更换配件:</string>
+    <string name="choice_person">选择人员</string>
+
+    <!--standardization-->
+    <string name="before_stand">标定前:</string>
+    <string name="after_stand">标定后:</string>
+    <string name="stand_remark">备注信息:</string>
+
+    <!--task_get-->
+    <string name="danger_inspection">类别:&#12288;危险源巡检</string>
+    <string name="dg_inspect">危险源巡检</string>
+    <string name="dg_stand">危险源标定</string>
+    <string name="dg_maintain">危险源维护</string>
+    <string name="cm_maintain">通用维护</string>
+    <string name="i_create">我创建</string>
+    <string name="not_get">未领取</string>
+    <string name="get">已领取</string>
+    <string name="task_name">任&#8201;&#8201;务&#8201;&#8201;名:</string>
+    <string name="task_terminal">任务站点:</string>
+    <string name="task_type">任务类型&#160;:</string>
+    <string name="task_remark">任务备注:</string>
+    <string name="task_description">任务描述:</string>
+    <string name="get_it">领&#160;取&#160;任&#160;务</string>
+    <string name="time">时&#12288;&#12288;间:</string>
+    <string name="spare_parts">请求备件:</string>
+    <string name="apply_time">请备时间:</string>
+    <string name="connect_project">关联项目:</string>
+    <string name="apply_name">请 备 名：</string>
+    <string name="apply_date">请备日期</string>
+
+    <!-- upload -->
+    <string name="uploading">正在上传...</string>
+    <string name="pause_upload">暂停</string>
+    <string name="fail_to_upload">上传失败</string>
+    <string name="success_upload">上传成功</string>
+    <string name="pause">暂停</string>
+    <string name="cancel_upload">取消上传</string>
+    <string name="re_upload">重新上传</string>
+</resources>

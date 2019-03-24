@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="windowBackground">#effaff</color>
+    <color name="theme_primary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#32a3d7</color>
+    <color name="blue">#32a3d7</color>
+    <color name="green">#4ffc63</color>
+    <color name="yellow">#e48415</color>
+    <color name="red">#fc0606</color>
+    <color name="gray">#eeb4b9be</color>
+    <color name="label_text">#666666</color>
+    <color name="content_text">#333333</color>
+    <color name="letter">#FFFCD2</color>
+    <color name="lg_bt_text">#99FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="theme_primary_text_inverted">#000000</color>
+    <color name="theme_secondary_text_inverted">#6c6b6b</color>
+    <color name="line">#E5E5E5</color>
+    <color name="et_focus_color">#32a3d7</color>
+    <color name="et_no_focus_color">#e5e5e5</color>
+    <color name="sta_font">#32a3d7</color>
+    <color name="stationInfo">#333333</color>
+    <color name="back_color">#f5fcff</color>
+    <color name="frame">#e5e5e5</color>
+    <color name="trans_white">#36ffffff</color>
+    <color name="camera_bg">#F5F4F4</color>
+    <color name="equipment_type_choose">#f7d54a</color>
+
+</resources>

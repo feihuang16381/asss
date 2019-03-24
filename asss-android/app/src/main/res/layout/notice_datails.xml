@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/back_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/head_return"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_return"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/sta_font"
+            android:textSize="18sp"
+            android:text="通知详情"/>
+        <ImageView
+            android:id="@+id/head_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/icon_add"
+            android:layout_marginRight="12dp"
+            android:layout_gravity="right|center"/>
+    </LinearLayout>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/notice_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+
+                android:layout_width="350dp"
+                android:layout_height="450dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:background="@color/letter">
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:divider="@drawable/horizontal_imaginary_line"
+                            android:orientation="vertical"
+                            android:showDividers="middle">
+
+                            <TextView
+                                android:id="@+id/notice_head"
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+                                android:gravity="center|center_horizontal"
+                                android:text="安全通知"
+                                android:textColor="#333333"
+                                android:background="#fffcd2"
+                                android:textSize="18sp" />
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scrollbars="none">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/notice_creator"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:gravity="top|left"
+                                        android:lineSpacingExtra="10dp"
+                                        android:lineSpacingMultiplier="1.2"
+                                        android:textColor="#666666"
+                                        android:textSize="16sp" />
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="120dp"
+                                        android:textColor="#666666"/>
+                                </LinearLayout>
+                            </ScrollView>
+                        </LinearLayout>
+
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="350dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/pic_envelop" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

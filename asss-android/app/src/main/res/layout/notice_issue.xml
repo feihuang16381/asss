@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/back_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/head_return"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/icon_return"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/sta_font"
+            android:textSize="18sp"
+            android:text="通知发布"/>
+        <TextView
+            android:id="@+id/head_issue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="发布"
+            android:textSize="16sp"
+            android:textColor="@color/sta_font"
+            android:layout_marginRight="12dp"
+            android:layout_gravity="right|center"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:minHeight="60dp"
+            android:background="@color/white" >
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="5dp"
+                android:hint="标题（必填），4-40字"
+                android:background="@null"
+                android:maxLength="40"
+                android:gravity="center|left"
+                android:textSize="16sp"
+                android:maxLines="1" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/text_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:gravity="top|left"
+            android:hint="正文（必填），15-1500字"
+            android:lineSpacingExtra="10dp"
+            android:maxLength="1500"
+            android:minLines="5"
+            android:scrollbars="vertical"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/white"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/affix"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/icon_fujian"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="5dp"
+                android:textSize="16sp"
+                android:hint="添加附件"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="5dp"
+            android:gravity="center|top"
+            android:src="@drawable/icon_tip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="5dp"
+            android:text="该通知发布后，默认对所有人公告"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

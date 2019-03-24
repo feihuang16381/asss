@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/terminal_info_ly"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:textSize="13sp"
+            android:gravity="center"
+            android:id="@+id/terminal_infoTv"
+            android:layout_width="160dp"
+            android:layout_height="55dp"
+            android:text="重庆理工大学"
+            android:background="@drawable/map_dropbox"
+            android:textColor="@color/colorAccent"
+            />
+
+    <ImageView
+        android:id="@+id/terminalStateIv"
+        android:layout_gravity="center"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/icon_dinwei"/>
+</LinearLayout>

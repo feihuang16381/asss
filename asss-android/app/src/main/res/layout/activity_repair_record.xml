@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground"
+    android:fitsSystemWindows="true"
+    tools:context="com.cqut.icode.asss_android.activity.RepairRecordActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        >
+        <FrameLayout
+            android:id="@+id/toolbar_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/the_theme_toolbar" />
+
+            <com.miguelcatalan.materialsearchview.MaterialSearchView
+                android:id="@+id/search_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <include
+            android:id="@+id/tablayout"
+            layout="@layout/head_tab_layout"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tablayout"
+            android:orientation="vertical">
+
+            <com.scu.miomin.shswiperefresh.core.SHSwipeRefreshLayout
+                android:id="@+id/refresh_item"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                app:guidance_text_color="@color/colorAccent"
+                app:guidance_view_bg_color="@color/windowBackground"
+                app:load_text="加载更多"
+                app:progress_bar_color="@color/colorAccent"
+                app:refresh_text="下拉刷新">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/list_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+            </com.scu.miomin.shswiperefresh.core.SHSwipeRefreshLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
